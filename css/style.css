@@ -62,9 +62,13 @@ main { width: 564px; float: left; }
 }
 
 #content .dogHouse:hover { border: 1px solid #5ba66f; background-color: #c3ebcd; }
+#content .dogHouse:hover a { color: #fff; }
 #content .dogFood:hover { border: 1px solid #566694; background-color: #b7c5eb; }
+#content .dogFood:hover a { color: #fff; }
 #content .dogWater:hover { border: 1px solid #4c7d8f; background-color: #bce6f5; }
+#content .dogWater:hover a { color: #fff; }
 #content .dogName:hover { border: 1px solid #b35da1; background-color: #ebb9e1; }
+#content .dogName:hover a { color: #fff; }
 #content section a { color: #333; }
 #content section h3 { padding-bottom: 18px;}
 #content section p { font-size: 14px; line-height: 20px; }
