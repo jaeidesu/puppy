@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/* 초기화 */
+* { box-sizing: border-box; } /*필수요소*/
+body, h1, h2, h3, p, ul { margin: 0; padding: 0; }
+li { list-style: none; }
+hr { display: none; }
+a { text-decoration: none; color: #000; }
+.hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px; height: 1px;
+    margin: -1px; overflow: hidden;
+}
+
+/* 전체영역 및 웹폰트 적용 */
+body { width: 800px; margin: 9px 40px 0; }
+@font-face {
+    font-family: SUIT;
+    src: local(SUIT),
+    url(./font/SUIT-Regular.ttf)
+    url(./font/SUIT-Regular.woff)
+}
+@font-face {
+    font-family: 빙그레체;
+    src: local(빙그레체) 
+    url(./font/Binggrae.ttf)
+    url(./font/Binggrae.woff)
+}
+h2, h3 { font-family: 빙그레체;}
+nav, p, small { font-family: SUIT; }
+
+/* 헤더영역 */
+#header { position: relative; height: 150px; margin-top: 8px; background-color: #f46075;}
+#header h1 { width: 185px; height: 150px;}
+#header h1 a { display: block; height: 100%; background: url(../images/logo.png);
+            text-indent: -150%; overflow: hidden;
+}
+
+/* GNB */
+#gnb { position: absolute; left: 290px; top: 80px; height: 15px; width: 400px; }
+#gnb ul { float: right; }
+#gnb ul li { float: left; margin-right: 30px; }
+#gnb ul li a { color: #fff; }
+#gnb ul li a:hover { color: #0f0; }
+
+/* #gnb ul { display: flex; }
+#gnb ul li { margin-right: 30px;}
+#gnb ul li a { color: #fff; } */
+
+/* 메인 */
+main { width: 564px; float: left; }
+#content {}
+#content h2 { /*height: 82px; padding: 32px 8px 27px;*/ line-height: 82px; text-indent: 6px; }
+#content section { 
+    width: 272px; height: 242px; float: left;
+    border: 1px solid #ccc; /*box-sizing: border 해 줬기 때문에 border가 안쪽으로 생김*/
+    padding: 24px 10px 0;
+    margin: 0 0 10px 10px;
+}
+#content section a { color: 333; }
+#content section h3 { padding-bottom: 18px;}
+#content section p { font-size: 14px; line-height: 20px; }
+
+/* aside */
+#puppyPhoto { width: 202px;
+            float: right;
+            margin-top: 82px; padding: 10px 0;
+            border: 1px solid #333;
+            background-color: #ffcc;
+            text-align: center;
+}
+#puppyPhoto img {}
+
+/* footer */
+footer { clear: both;
+        width: 800px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        line-height: 60px;
+        }
